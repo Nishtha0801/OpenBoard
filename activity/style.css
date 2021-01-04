@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+.toolbar{
+    background: aliceblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tools{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.tool{
+    position: relative;
+}
+.tool img{
+    height: 50px;
+}
+.content{
+    
+    height: calc(100vh - 100px);
+}
+.active-tool{
+    border: 2px solid lightblue;
+    border-radius: 30px;
+    padding:5px;
+}
+.tool-options{
+   
+    height: 100px;
+    position: absolute;
+    top: 70px;
+    left: -53px;
+    background: aliceblue;
+    border-radius: 15px;
+    width: 160px;
+    display: none;
+}
+.tool-options-active{
+    display: block;
+}
+.eraser-slider{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-slider{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-color{
+    display: flex;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pencil-color div{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+
+}
+.black{
+     background: black;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+.yellow{
+    background: yellow;
+}
+.sticky{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    height: 186px;
+    width: 263px;
+}
+.sticky-header{
+    background:darkslategray;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.minimize{
+    height: 25px;
+    width: 25px;
+    background:lightgray;
+    border-radius: 50px;
+}
+.close{
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50px;
+}
+.sticky-content{
+    height: 150px;
+}
+.sticky-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

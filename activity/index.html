@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <div class="toolbar">
+        <div class="tools">
+           <div class="tool" >
+               <div class="tool-img active-tool" id="pencil">
+                <img src="./images/pencil.png" alt="" >
+               </div>
+            
+            <div class="tool-options" id="pencil-options">
+                <div class="pencil-slider">
+                    <input type="range" name ="" id="pencil-slider" min="1" max="30" value="1">
+                </div>
+                <div class="pencil-color">
+                    <div class="black"></div>
+                    <div class="red"></div>
+                    <div class="blue"></div>
+                    <div class="yellow"></div>
+                </div>
+            </div>
+           </div>
+           <div class="tool" >
+               <div class="tool-img" id="eraser">
+                <img src="./images/eraser.png" alt="" >
+               </div>
+             <div class="tool-options" id="eraser-options">
+                 <div class="eraser-slider">
+                    <input type="range" name ="" id="eraser-slider" min="1" max="30" value="1">
+                 </div>
+             </div>
+           </div>
+           <div class="tool" id= "sticky">
+            <img src="./images/sticky-notes.png" alt="" >
+           </div>
+           <div class="tool" id="upload">
+               <label for="img-upload">
+            <img src="./images/image.png" alt="" >
+            <input type="file" name="" id="img-upload" style="display: none;">
+                </label>
+           </div>
+           <div class="tool" id="download">
+            <img src="./images/download.png" alt="" >
+           </div>
+           <div class="tool" id="undo" >
+            <img src="./images/undo.png" alt="" >
+           </div>
+           <div class="tool" id="redo" >
+            <img src="./images/redo.png" alt="" >
+           </div>
+        </div>
+    </div>
+    <div class="content">
+        <canvas id="canvas" class="canvas"></canvas>
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script src="tools.js"></script>
+    <script src="sticky.js"></script>
+    <script src="img.js"></script>
+    <script src="util.js"></script>
+</body>
+</html>
