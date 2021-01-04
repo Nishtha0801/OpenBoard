@@ -43,6 +43,7 @@ canvas.addEventListener("mousedown",function(e){
         width: ctx.lineWidth
     }
     points.push(point);
+    socket.emit("md",point);
 })
 
 canvas.addEventListener("mousemove",function(e){
@@ -62,6 +63,7 @@ canvas.addEventListener("mousemove",function(e){
             width: ctx.lineWidth
         }
         points.push(point);
+        socket.emit("mm" , point);
     }
 })
 canvas.addEventListener("mouseup",function(e){
